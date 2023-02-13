@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UnLogged.Master.cs" Inherits="Project.Master1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 21px;
+        }
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 132px;
+        }
+        body {
+             margin: 0;
+             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+             overflow: hidden;
+             background-color: black;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: darkgrey;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: darkgrey;
+            color: white;
+        }
+        .auto-style5 {
+            width: 132px;
+            height: 59px;
+        }
+        .auto-style6 {
+            height: 88px;
+        }
+    </style>
+</head>
+<body style="background-color:#333;">
+    <form id="form1" runat="server">
+        <div>
+            <table align="center" class="auto-style1">
+                <tr>
+                    <td class="auto-style5">
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="91px" PostBackUrl="~/Home.aspx" Width="132px" ImageUrl="~/Pictures/logo.png" />
+                    </td>
+                    <td class="auto-style6">
+                        <div class="topnav auto-style6">
+                            <b>
+                          <a href="Home.aspx">Home</a>
+                          <a href="About-Us.aspx">About Us</a>
+                          <a href="Sign-Up.aspx">Sign Up</a>
+                          <a href="SignIn.aspx">Sign In</a>
+                                </b>
+                         <br />
+                         <br />
+                         <br />
+                </div></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        &nbsp;</td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
