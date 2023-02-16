@@ -1,18 +1,16 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UnLogged.Master.cs" Inherits="Project.Master1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Logged.master.cs" Inherits="Project.Logged" %>
 
 <!DOCTYPE html>
 
 <html>
-<head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+<head runat="server"><title></title>
     <style type="text/css">
         .auto-style1 {
             width: 100%;
         }
         .auto-style2 {
             height: 21px;
+            width: 132px;
         }
         .auto-style1 {
             width: 100%;
@@ -55,6 +53,9 @@
         .auto-style6 {
             height: 88px;
         }
+        .auto-style7 {
+            height: 21px;
+        }
     </style>
 </head>
 <body style="background-color:#333;">
@@ -69,19 +70,16 @@
                         <div class="topnav auto-style6">
                             <b>
                           <a href="Home.aspx">Browse</a>
-                          <a href="About-Us.aspx">About Us</a>
-                          <a href="Sign-Up.aspx">Sign Up</a>
-                          <a href="Sign-In.aspx">Sign In</a>
-                                </b>
-                         <br />
-                         <br />
-                         <br />
-                </div></td>
+                          <a href="About-Us.aspx">Profile</a>&nbsp;
+                          <a href="Sign-Up.aspx">My Cart</a>
+                          <a href="Sign-In.aspx">Sign Out</a>
+                            </b></div>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        &nbsp;</td>
-                    <td>
+                        </td>
+                    <td class="auto-style7">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                         </asp:ContentPlaceHolder>
                     </td>

@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="App_Code.mybqifr1">
+      <HintPath>..\..\..\..\..\AppData\Local\Temp\Temporary ASP.NET Files\root\5762aae7\_shadow\df2af7c2\10024\App_Code.mybqifr1.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -70,9 +73,12 @@
     <Content Include="About-Us.aspx" />
     <Content Include="App_Data\DB.accdb" />
     <Content Include="Home.aspx" />
+    <Content Include="LoggedBrowse.aspx" />
     <Content Include="Pictures\logo.png" />
     <Content Include="Sign-In.aspx" />
     <Content Include="Sign-Up.aspx" />
+    <Content Include="SignOut.aspx" />
+    <Content Include="UnLoggedForgotPass.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +88,34 @@
     </Compile>
     <Compile Include="About-Us.aspx.designer.cs">
       <DependentUpon>About-Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logged.Master.cs">
+      <DependentUpon>Logged.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logged.Master.designer.cs">
+      <DependentUpon>Logged.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LoggedBrowse.aspx.cs">
+      <DependentUpon>LoggedBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggedBrowse.aspx.designer.cs">
+      <DependentUpon>LoggedBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignOut.aspx.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignOut.aspx.designer.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnLoggedForgotPass.aspx.cs">
+      <DependentUpon>UnLoggedForgotPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnLoggedForgotPass.aspx.designer.cs">
+      <DependentUpon>UnLoggedForgotPass.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\DBfunctions.cs" />
     <Content Include="App_Code\Userfunctions.cs" />
@@ -117,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="UnLogged.Master" />
+    <Content Include="Logged.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

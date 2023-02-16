@@ -37,23 +37,24 @@ namespace Project.App_Code
         {//returns back a datatable filled with entire data inside DB
             string FileName = "DB.accdb";
             string strSQL;
-            strSQL = "select * from customers";
+            strSQL = "select * from Users";
             return DBfunctions.SelectFromTable(strSQL, FileName);
         }
         
         public void DeleteSelectedUser(string em)
         {//function deletes a selected user (admin function)
             string FileName = "DB.accdb";
-            string StrSql = "delete * from users where EMAIL'" + em + "'";
+            string StrSql = "delete * from Users where EMAIL'" + em + "'";
             DBfunctions.ChangeTable(StrSql, FileName);
         }
         public DataTable GetUserByEmail(string Email)
-        {
+        {//functions returns list that contains users with sent email
             string FileName = "DB.accdb";
             string strSQL;
-            strSQL = "select * from customers where email='" + Email + "'";
+            strSQL = "select * from Users where EMAIL='" + Email + "'";
             DataTable dt = DBfunctions.SelectFromTable(strSQL, FileName);
             return dt;
+            
         }
     }
 }
