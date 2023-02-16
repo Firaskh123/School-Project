@@ -73,13 +73,15 @@
     <Content Include="About-Us.aspx" />
     <Content Include="App_Data\DB.accdb" />
     <Content Include="Home.aspx" />
-    <Content Include="LoggedBrowse.aspx" />
+    <Content Include="Logged-Browse.aspx" />
     <Content Include="Pictures\logo.png" />
+    <Content Include="Pictures\Resized-Logo.png" />
     <Content Include="Sign-In.aspx" />
     <Content Include="Sign-Up.aspx" />
     <Content Include="SignOut.aspx" />
     <Content Include="UnLoggedForgotPass.aspx" />
     <Content Include="Web.config" />
+    <Content Include="What needs to be fixed.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About-Us.aspx.cs">
@@ -89,6 +91,13 @@
     <Compile Include="About-Us.aspx.designer.cs">
       <DependentUpon>About-Us.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Logged.Master.cs">
       <DependentUpon>Logged.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -96,12 +105,12 @@
     <Compile Include="Logged.Master.designer.cs">
       <DependentUpon>Logged.Master</DependentUpon>
     </Compile>
-    <Compile Include="LoggedBrowse.aspx.cs">
-      <DependentUpon>LoggedBrowse.aspx</DependentUpon>
+    <Compile Include="Logged-Browse.aspx.cs">
+      <DependentUpon>Logged-Browse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LoggedBrowse.aspx.designer.cs">
-      <DependentUpon>LoggedBrowse.aspx</DependentUpon>
+    <Compile Include="Logged-Browse.aspx.designer.cs">
+      <DependentUpon>Logged-Browse.aspx</DependentUpon>
     </Compile>
     <Compile Include="SignOut.aspx.cs">
       <DependentUpon>SignOut.aspx</DependentUpon>
@@ -152,6 +161,7 @@
   <ItemGroup>
     <Content Include="UnLogged.Master" />
     <Content Include="Logged.Master" />
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

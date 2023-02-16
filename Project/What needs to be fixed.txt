@@ -1,0 +1,2 @@
+﻿-pass over every response.redirect() and fix connections
+-admin pages are still missing

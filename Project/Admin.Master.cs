@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Project
 {
-    public partial class SignOut : System.Web.UI.Page
+    public partial class Admin : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["fullname"] = null;
-            Session["email"] = null;
-            Response.Redirect("Home.aspx");
+
         }
     }
 }

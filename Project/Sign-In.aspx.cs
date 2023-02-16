@@ -22,7 +22,7 @@ namespace Project
             string em = TextBox3.Text;
             string pass = TextBox4.Text;
             string FileName = "DB.accdb";
-            string sqlStr = "select * from Customers where EMAIL='" + em + "' and pass='" + pass + "'";
+            string sqlStr = "select * from Users where EMAIL='" + em + "' and PASS='" + pass + "'";
             try
             { //if an issue appears, it is due to pressing [enter] instead of the login button
                 DataTable dt = DBfunctions.SelectFromTable(sqlStr, FileName);
@@ -30,15 +30,14 @@ namespace Project
                 {
                     Session["fullname"] = dt.Rows[0][0].ToString();
                     Session["email"] = em;
-                    Session["Gender"] = dt.Rows[0][4];
-                    if ((bool)dt.Rows[0][8] != true)
+                    if ((bool)dt.Rows[0][7] != true)
                     {
-                        Response.Redirect("~/- Logged in/Logged_Home.aspx");
+                        Response.Redirect("Logged-Browse.aspx");
                     }
                     else
                     {//in-case of admin log in
                         Session["Admin"] = "active";
-                        Response.Redirect("~/- Admin/AdminPage.aspx");
+                        Response.Redirect("~/- Admin/AdminPage.aspx"); //page hasn't been done yet
                     }
                 }
                 else

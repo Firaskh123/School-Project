@@ -123,16 +123,6 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="auto-style20">Gender:</td>
-                            <td class="auto-style14">
-                                <asp:RadioButtonList ID="RadioBGender" runat="server" CssClass="auto-style23" RepeatDirection="Horizontal" RepeatLayout="Flow">
-                                    <asp:ListItem Selected="True" Value="Male">Male</asp:ListItem>
-                                    <asp:ListItem Value="Female">Female</asp:ListItem>
-                                    <asp:ListItem Value="N/A">None</asp:ListItem>
-                                </asp:RadioButtonList>
-                            </td>
-                        </tr>
-                        <tr>
                             <td class="auto-style38">Country:</td>
                             <td class="auto-style30">
                                 <asp:DropDownList ID="DropDownList1" runat="server">

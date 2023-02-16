@@ -1,10 +1,11 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Logged.master.cs" Inherits="Project.Logged" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Project.Admin" %>
 
 <!DOCTYPE html>
 
 <html>
-<head runat="server"><title></title>
-    <style type="text/css">
+<head runat="server">
+    <title></title>
+     <style type="text/css">
         .auto-style1 {
             width: 100%;
         }
@@ -61,6 +62,7 @@
 <body style="background-color:#333;">
     <form id="form1" runat="server">
         <div>
+            <asp:Panel ID="Panel1" runat="server" BackImageUrl="~/Pictures/Resized-Logo.png" BackColor="#00014D">
             <table align="center" class="auto-style1">
                 <tr>
                     <td class="auto-style5">
@@ -69,9 +71,9 @@
                     <td class="auto-style6">
                         <div class="topnav auto-style6">
                             <b>
-                          <a href="Logged-Browse.aspx">Browse</a>
-                          <a href="About-Us.aspx">Profile</a>&nbsp;
-                          <a href="Sign-Up.aspx">My Cart</a>
+                          <a href="Logged-Browse.aspx">Main Page</a>
+                          <a href="About-Us.aspx">Products</a>&nbsp;
+                          <a href="Sign-Up.aspx">Contacts</a>
                           <a href="SignOut.aspx">Sign Out</a>
                             </b></div>
                     </td>
@@ -84,7 +86,7 @@
                         </asp:ContentPlaceHolder>
                     </td>
                 </tr>
-            </table>
+            </table></asp:Panel>
         </div>
     </form>
 </body>

@@ -21,16 +21,15 @@ namespace Project
         protected void Button_SignUpClick(object sender, EventArgs e)
         {//sign up function
             string FileName = "DB.accdb"; 
-            string sqlStr = "insert into Customers(FN,LN,EMAIL,pass,GENDER,COUNTRY,PassQuestion,PassAnswer) values('";
+            string sqlStr = "insert into Users(FN,LN,EMAIL,PASS,COUNTRY,PassQuestion,PassAnswer) values('";
             sqlStr += TextBox1.Text + "','";
             sqlStr += TextBox2.Text + "','";
             sqlStr += TextBox3.Text + "','";
             sqlStr += TextBox4.Text + "','";
-            sqlStr += RadioBGender.SelectedValue.ToString() + "','";
             sqlStr += DropDownList1.SelectedValue.ToString() + "','";
             sqlStr += DropDownList2.SelectedValue.ToString() + "','";
             sqlStr += TextBox6.Text + "')";
-            string sqlstrVALID = "select * from Customers where EMAIL='" + TextBox3.Text + "'";
+            string sqlstrVALID = "select * from Users where EMAIL='" + TextBox3.Text + "'";
             try
             {
                 DataTable dt = DBfunctions.SelectFromTable(sqlstrVALID, FileName);
@@ -46,15 +45,14 @@ namespace Project
                         Labelforerrors.Text = "succesfully registered!";
                         Session["fullname"] = TextBox1.Text;
                         Session["email"] = TextBox3.Text;
-                        Session["Gender"] = RadioBGender.SelectedValue;
-                        if ((bool)dt.Rows[0][8] != true)
+                        if ((bool)dt.Rows[0][7] != true)
                         {
                             Response.Redirect("~/- Logged in/Logged_Home.aspx");
                         }
                         else
                         {//in-case of admin log in
                             Session["Admin"] = "active";
-                            Response.Redirect("~/- Admin/AdminPage.aspx");
+                            Response.Redirect("~/- Admin/AdminPage.aspx"); //page hasn't been done yet
                         }
                     }
                     catch (Exception ex)

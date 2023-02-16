@@ -91,12 +91,12 @@
                             <br />
         </td>
                         <td class="auto-style16">
-            <asp:Button ID="Button10" runat="server" BackColor="Lime" OnClick="ButtonLogin_Click" Text="Sign In" Height="32px" Width="87px" />
+            <asp:Button ID="Button10" runat="server" OnClick="ButtonLogin_Click" Text="Sign In" Height="32px" Width="87px" />
             <span class="auto-style25">&nbsp;
             </span>
             <asp:Label ID="Labelforerrors" runat="server" Text="error" Visible="False" CssClass="auto-style25"></asp:Label>
                             <br />
-            <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/UnLoggedForgotPass.aspx">Forgot your password?</asp:HyperLink>
+                            &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/UnLoggedForgotPass.aspx">Forgot your password?</asp:HyperLink>
                             
         </td>
 
