@@ -11,7 +11,15 @@ namespace Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            {//a non admin account must not have access
+                if (Session["fullname"] == null)
+                    Response.Redirect("~/- Not logged/Home.aspx");
+                else
+                {
+                    if ((Session["Admin"] != null) && !(Session["Admin"].ToString() == "active"))
+                        Response.Redirect("~/- Logged in/Logged_Home.aspx");
+                }
+            }
         }
     }
 }

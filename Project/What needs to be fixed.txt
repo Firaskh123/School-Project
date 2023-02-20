@@ -1,2 +1,8 @@
 ﻿-pass over every response.redirect() and fix connections
 -admin pages are still missing
+
+v0.1
+-all of unlogged pages are done (hopefully)
+-all of main logged pages are made
+-admin master was created
+-added a product control page (still in production)

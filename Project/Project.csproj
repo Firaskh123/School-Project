@@ -76,6 +76,7 @@
     <Content Include="Logged-Browse.aspx" />
     <Content Include="Pictures\logo.png" />
     <Content Include="Pictures\Resized-Logo.png" />
+    <Content Include="Product-Control.aspx" />
     <Content Include="Sign-In.aspx" />
     <Content Include="Sign-Up.aspx" />
     <Content Include="SignOut.aspx" />
@@ -111,6 +112,13 @@
     </Compile>
     <Compile Include="Logged-Browse.aspx.designer.cs">
       <DependentUpon>Logged-Browse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product-Control.aspx.cs">
+      <DependentUpon>Product-Control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product-Control.aspx.designer.cs">
+      <DependentUpon>Product-Control.aspx</DependentUpon>
     </Compile>
     <Compile Include="SignOut.aspx.cs">
       <DependentUpon>SignOut.aspx</DependentUpon>
