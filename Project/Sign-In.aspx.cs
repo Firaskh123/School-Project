@@ -37,7 +37,7 @@ namespace Project
                     else
                     {//in-case of admin log in
                         Session["Admin"] = "active";
-                        Response.Redirect("~/- Admin/AdminPage.aspx"); //page hasn't been done yet
+                        Response.Redirect("Admin-Main.aspx"); //page hasn't been done yet
                     }
                 }
                 else

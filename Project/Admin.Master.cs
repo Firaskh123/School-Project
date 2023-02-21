@@ -13,11 +13,11 @@ namespace Project
         {
             {//a non admin account must not have access
                 if (Session["fullname"] == null)
-                    Response.Redirect("~/- Not logged/Home.aspx");
+                    Response.Redirect("Home.aspx");
                 else
                 {
                     if ((Session["Admin"] != null) && !(Session["Admin"].ToString() == "active"))
-                        Response.Redirect("~/- Logged in/Logged_Home.aspx");
+                        Response.Redirect("Logged-Browse.aspx");
                 }
             }
         }

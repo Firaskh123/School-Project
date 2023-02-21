@@ -6,3 +6,8 @@ v0.1
 -all of main logged pages are made
 -admin master was created
 -added a product control page (still in production)
+
+-found an issue in signup page with index[0] (mostly fixed,recheck later)
+-another many problems in admin pages, user control and product control have not been checked yet
+-category control needs to be done
+-need to arrange the files, they are hella messy

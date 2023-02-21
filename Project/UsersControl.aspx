@@ -1,0 +1,55 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="UsersControl.aspx.cs" Inherits="Project.UsersControl" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <table align="center" style="width: 100%; ">
+    <tr>
+        <td colspan="3" style="color: #FFFFFF; text-align: center; height: 34px;" class="auto-style6">
+            <h2 style="background-color: #000000">Users Control</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 30px">&nbsp;</td>
+        <td style="width: 1125px">
+            <div style="text-align: center">
+                <asp:Panel ID="Panel1" runat="server" Visible="False" Height="100%" Width="100%">
+                    <asp:Button ID="Button1" runat="server" Height="30px" OnClick="ButtonRefresh_Click" Text="Refresh" Width="80px" />
+                    <br />
+                    <asp:Label ID="LabelFortable" runat="server" style="color: #FFFFFF; font-size: large;" Text="Tablelabel"></asp:Label>
+                    <br />
+                    <asp:GridView ID="GridViewAllUsers" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" AutoGenerateColumns="False" DataKeyNames="FN" DataSourceID="SqlDataSource1" AllowSorting="True" GridLines="Vertical" OnRowDeleting="GridViewAllUsers_RowDeleting">
+                        <AlternatingRowStyle BackColor="#CCCCCC" />
+                        <Columns>
+                            <asp:CommandField ShowSelectButton="True" />
+                            <asp:BoundField DataField="FN" HeaderText="FN" ReadOnly="True" SortExpression="FN" />
+                            <asp:BoundField DataField="LN" HeaderText="LN" SortExpression="LN" />
+                            <asp:BoundField DataField="EMAIL" HeaderText="EMAIL" SortExpression="EMAIL" />
+                            <asp:BoundField DataField="PASS" HeaderText="PASS" SortExpression="PASS" />
+                            <asp:BoundField DataField="COUNTRY" HeaderText="COUNTRY" SortExpression="COUNTRY" />
+                            <asp:BoundField DataField="PassQuestion" HeaderText="PassQuestion" SortExpression="PassQuestion" />
+                            <asp:BoundField DataField="PassAnswer" HeaderText="PassAnswer" SortExpression="PassAnswer" />
+                            <asp:CheckBoxField DataField="IsAdmin" HeaderText="IsAdmin" SortExpression="IsAdmin" />
+                        </Columns>
+                        <FooterStyle BackColor="#CCCCCC" />
+                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                        <SortedAscendingHeaderStyle BackColor="Gray" />
+                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                        <SortedDescendingHeaderStyle BackColor="#383838" />
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString3 %>" ProviderName="<%$ ConnectionStrings:ConnectionString3.ProviderName %>" SelectCommand="SELECT * FROM [Users] ORDER BY [FN]"></asp:SqlDataSource>
+                    <h3 style="background-color: #000000">
+                        <br />
+                        <span style="color: #FFFFFF">you have reached the end of the page</span></h3>
+                </asp:Panel>
+            </div>
+        </td>
+        <td style="width: 30px">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 30px">&nbsp;</td>
+        <td style="width: 1125px">&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</asp:Content>

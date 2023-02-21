@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About-Us.aspx" />
+    <Content Include="Admin-Main.aspx" />
     <Content Include="App_Data\DB.accdb" />
     <Content Include="Home.aspx" />
     <Content Include="Logged-Browse.aspx" />
@@ -81,6 +82,7 @@
     <Content Include="Sign-Up.aspx" />
     <Content Include="SignOut.aspx" />
     <Content Include="UnLoggedForgotPass.aspx" />
+    <Content Include="UsersControl.aspx" />
     <Content Include="Web.config" />
     <Content Include="What needs to be fixed.txt" />
   </ItemGroup>
@@ -98,6 +100,13 @@
     </Compile>
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin-Main.aspx.cs">
+      <DependentUpon>Admin-Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin-Main.aspx.designer.cs">
+      <DependentUpon>Admin-Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logged.Master.cs">
       <DependentUpon>Logged.Master</DependentUpon>
@@ -133,6 +142,13 @@
     </Compile>
     <Compile Include="UnLoggedForgotPass.aspx.designer.cs">
       <DependentUpon>UnLoggedForgotPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControl.aspx.cs">
+      <DependentUpon>UsersControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersControl.aspx.designer.cs">
+      <DependentUpon>UsersControl.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\DBfunctions.cs" />
     <Content Include="App_Code\Userfunctions.cs" />
