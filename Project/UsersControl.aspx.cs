@@ -11,10 +11,7 @@ namespace Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {//this will prevent the server from rebuilding the table when page is refreshed
-                BuildTable();
-            }
+
         }
         protected void BuildTable()
         {//function to build table full of all users data

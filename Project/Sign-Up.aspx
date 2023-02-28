@@ -156,8 +156,8 @@
                             <td class="auto-style32">
                                 <asp:DropDownList ID="DropDownList2" runat="server">
                                     <asp:ListItem Selected="True" Value="What is your favorite color?">What is your favorite color?</asp:ListItem>
-                                    <asp:ListItem Value="What is your dog's name?">What is your dog&#39;s name?</asp:ListItem>
-                                    <asp:ListItem Value="What is your mother's name?">What is your mother&#39;s name?</asp:ListItem>
+                                    <asp:ListItem Value="What is your dog name?">What is your dog name?</asp:ListItem>
+                                    <asp:ListItem Value="What is your mothers name?">What is your mothers name?</asp:ListItem>
                                 </asp:DropDownList>
                                 <br class="auto-style23" />
                             </td>

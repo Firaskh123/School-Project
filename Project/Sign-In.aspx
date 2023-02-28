@@ -20,21 +20,21 @@
         }
         .auto-style30 {
             width: 12%;
-            height: 31px;
+            height: 36px;
             color: #FFFFFF;
         }
         .auto-style22 {
             width: 23%;
-            height: 31px;
+            height: 36px;
         }
         .auto-style33 {
             width: 12%;
             color: #FFFFFF;
-            height: 29px;
+            height: 35px;
         }
         .auto-style27 {
             width: 23%;
-            height: 29px;
+            height: 35px;
         }
         .auto-style35 {
             width: 100%;
@@ -76,10 +76,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style33">
+                        <td class="auto-style30">
                             <h3 class="auto-style39">Password:&nbsp;&nbsp; </h3>
                         </td>
-                        <td class="auto-style27">
+                        <td class="auto-style22">
                             <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" Width="179px"></asp:TextBox>
                             &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox4" CssClass="auto-style25" ErrorMessage="*Field must not be empty" ForeColor="Red" ValidationGroup="SignIn"></asp:RequiredFieldValidator>
                         </td>
@@ -100,6 +100,10 @@
                             
         </td>
 
+                    </tr>
+                    <tr>
+                        <td class="auto-style37">&nbsp;</td>
+                        <td class="auto-style16">&nbsp;</td>
                     </tr>
                 </table>
             </asp:Panel>

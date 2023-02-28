@@ -71,10 +71,10 @@
                     <td class="auto-style6">
                         <div class="topnav auto-style6">
                             <b>
-                          <a href="Logged-Browse.aspx">Main Page</a>
+                          <a href="Admin-Main.aspx">Main Page</a>
                           <a href="Product-Control.aspx">Products</a>&nbsp;
                           <a href="Sign-Up.aspx">Categories</a>
-                          <a href="Sign-Up.aspx">Users</a>
+                          <a href="UsersControl.aspx">Users</a>
                           <a href="SignOut.aspx">Sign Out</a>
                             </b></div>
                     </td>

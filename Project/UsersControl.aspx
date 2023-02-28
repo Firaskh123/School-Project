@@ -10,7 +10,7 @@
         <td style="width: 30px">&nbsp;</td>
         <td style="width: 1125px">
             <div style="text-align: center">
-                <asp:Panel ID="Panel1" runat="server" Visible="False" Height="100%" Width="100%">
+                <asp:Panel ID="Panel1" runat="server" Height="100%" Width="100%">
                     <asp:Button ID="Button1" runat="server" Height="30px" OnClick="ButtonRefresh_Click" Text="Refresh" Width="80px" />
                     <br />
                     <asp:Label ID="LabelFortable" runat="server" style="color: #FFFFFF; font-size: large;" Text="Tablelabel"></asp:Label>
