@@ -46,7 +46,8 @@ namespace Project.App_Code
             string FileName = "DB.accdb";
             string StrSql = "delete * from Users where EMAIL'" + em + "'";
             DBfunctions.ChangeTable(StrSql, FileName);
-        }
+        }//I might end up using this later for now delete
+
         public DataTable GetUserByEmail(string Email)
         {//functions returns list that contains users with sent email
             string FileName = "DB.accdb";
