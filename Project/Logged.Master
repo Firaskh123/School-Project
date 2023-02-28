@@ -70,8 +70,8 @@
                         <div class="topnav auto-style6">
                             <b>
                           <a href="Logged-Browse.aspx">Browse</a>
-                          <a href="About-Us.aspx">Profile</a>&nbsp;
-                          <a href="Sign-Up.aspx">My Cart</a>
+                          <a href="Logged-Browse.aspx">Profile</a>&nbsp;
+                          <a href="Logged-Browse.aspx">My Cart</a>
                           <a href="SignOut.aspx">Sign Out</a>
                             </b></div>
                     </td>
