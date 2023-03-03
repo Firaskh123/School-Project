@@ -20,13 +20,14 @@ namespace Project
 
         protected void GridViewAllUsers_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {//function deletes user from database
-            GridViewAllUsers.DeleteRow(GridViewAllUsers.SelectedIndex);
+            int index = GridViewAllUsers.SelectedIndex;
+            string x = GridViewAllUsers.SelectedRow.Cells[2].Text;
         }
         protected void ButtonRefresh_Click(object sender, EventArgs e)
         {//refresh table
             BuildTable();
         }
 
-
+        
     }
 }
