@@ -75,6 +75,7 @@
     <Content Include="App_Data\DB.accdb" />
     <Content Include="Home.aspx" />
     <Content Include="Logged-Browse.aspx" />
+    <Content Include="Logged-ShowProduct.aspx" />
     <Content Include="Pictures\logo.png" />
     <Content Include="Pictures\Resized-Logo.png" />
     <Content Include="Product-Control.aspx" />
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="Admin-Main.aspx.designer.cs">
       <DependentUpon>Admin-Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logged-ShowProduct.aspx.cs">
+      <DependentUpon>Logged-ShowProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logged-ShowProduct.aspx.designer.cs">
+      <DependentUpon>Logged-ShowProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logged.Master.cs">
       <DependentUpon>Logged.Master</DependentUpon>

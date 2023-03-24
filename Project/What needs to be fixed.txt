@@ -11,3 +11,12 @@ v0.1
 -another many problems in admin pages, user control and product control have not been checked yet 
 -category control needs to be done
 -need to arrange the files, they are hella messy
+
+
+pages that need to be made for the 30%:
+-user control should be fixed
+-category control should be fixed
+-product control should be fixed
+-product view for logged users should be made
+-add to cart function should be added
+-add a page to view products (for users)

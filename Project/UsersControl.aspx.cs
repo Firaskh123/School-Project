@@ -28,6 +28,9 @@ namespace Project
             BuildTable();
         }
 
-        
+        protected void GridViewAllUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
