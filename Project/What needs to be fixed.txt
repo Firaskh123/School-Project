@@ -20,3 +20,5 @@ pages that need to be made for the 30%:
 -product view for logged users should be made
 -add to cart function should be added
 -add a page to view products (for users)
+
+-add products to the Logged-Browse page

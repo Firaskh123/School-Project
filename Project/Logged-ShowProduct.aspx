@@ -3,7 +3,7 @@
     <style type="text/css">
         .auto-style4 {
             width: 600px;
-            background-color: #CCFFFF;
+            background-color: black;
         }
         .auto-style5 {
             width: 142px;
@@ -40,16 +40,16 @@
         width: 32px;
     }
     .auto-style15 {
-        width: 900px;
-        background-color: #CCFFFF;
-        height: 400px;
     }
+        .auto-style16 {
+            color: #FFFFFF;
+        }
     </style>
     <table align="center" class="auto-style15">
         <tr>
             <td class="auto-style14">&nbsp;</td>
             <td class="auto-style13">
-                <asp:Panel ID="Panel1" runat="server" BackColor="Black">
+                <asp:Panel ID="Panel1" runat="server" BackColor="Black" CssClass="auto-style16">
                     <table class="auto-style4" align="center">
                         <tr>
                             <td class="auto-style8" colspan="2">Product INFO</td>
