@@ -86,7 +86,7 @@
                         <tr>
                             <td class="auto-style7">Num of Products :</td>
                             <td class="auto-style10">
-                                <asp:TextBox ID="TextBoxProdNum0" runat="server" Width="23px">1</asp:TextBox>
+                                <asp:TextBox ID="TextBoxProdNum0" runat="server" Width="23px" ReadOnly="True" TextMode="Number">1</asp:TextBox>
                             </td>
                         </tr>
                         <tr>

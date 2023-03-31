@@ -13,5 +13,11 @@ namespace Project
         {
 
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {// moves user to a page with more info about the product
+            Session["selectedItemRow"] = GridView1.SelectedRow;
+            Response.Redirect("Logged-ShowProduct.aspx");
+        }
     }
 }

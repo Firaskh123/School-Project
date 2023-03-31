@@ -11,11 +11,8 @@
         <td style="width: 1125px">
             <div style="text-align: center">
                 <asp:Panel ID="Panel1" runat="server" Height="100%" Width="100%">
-                    <asp:Button ID="Button1" runat="server" Height="30px" OnClick="ButtonRefresh_Click" Text="Refresh" Width="80px" />
-                    <br />
-                    <asp:Label ID="LabelMsg" runat="server"></asp:Label>
     <br />
-                    <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataKeyNames="FN" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical">
+                    <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" DataKeyNames="FN" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="GridView2_SelectedIndexChanged">
                         <AlternatingRowStyle BackColor="#CCCCCC" />
                         <Columns>
                             <asp:CommandField ShowSelectButton="True" />

@@ -22,3 +22,5 @@ pages that need to be made for the 30%:
 -add a page to view products (for users)
 
 -add products to the Logged-Browse page
+
+-need to check page Logged-ShowProduct.aspx for property "number" on the amount textbox

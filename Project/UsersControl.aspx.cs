@@ -13,22 +13,21 @@ namespace Project
         {
 
         }
-        protected void BuildTable()
-        {//function to build table full of all users data
-            GridViewAllUsers.DataBind();
-        }
 
         protected void GridViewAllUsers_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {//function deletes user from database
-            int index = GridViewAllUsers.SelectedIndex;
-            string x = GridViewAllUsers.SelectedRow.Cells[2].Text;
+           
         }
         protected void ButtonRefresh_Click(object sender, EventArgs e)
-        {//refresh table
-            BuildTable();
+        {
         }
 
         protected void GridViewAllUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GridView2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
