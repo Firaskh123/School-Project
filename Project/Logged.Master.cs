@@ -11,7 +11,7 @@ namespace Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["fullname"] == null)
+            if (Session["fullname"] == null || Session["email"] == null) 
                 Response.Redirect("Home.aspx");
         }
     }

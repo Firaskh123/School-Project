@@ -14,16 +14,18 @@
             <td style="width: 1125px">
                 <div style="text-align: center">
                 <asp:Panel ID="Panel1" runat="server" Visible="False" Height="100%" Width="100%">
-                    <asp:Button ID="Button1" runat="server" Height="30px" OnClick="ButtonRefresh_Click" Text="Refresh" Width="80px" />
                     <br />
-                    <asp:Label ID="LabelFortable" runat="server" style="color: #FFFFFF; font-size: large;" Text="Tablelabel"></asp:Label>
                     <br />
-                    <asp:GridView ID="GridViewAllUsers" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" AutoGenerateColumns="False" DataKeyNames="Product Name" DataSourceID="SqlDataSource2" AllowSorting="True" GridLines="Vertical" OnRowDeleting="GridViewAllUsers_RowDeleting">
+                    <asp:GridView ID="GridViewAllUsers" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" AllowSorting="True" GridLines="Vertical" OnRowDeleting="GridViewAllUsers_RowDeleting">
                         <AlternatingRowStyle BackColor="#CCCCCC" />
                         <Columns>
-                            <asp:CommandField ShowSelectButton="True" />
-                            <asp:BoundField DataField="Product Name" HeaderText="Product Name" ReadOnly="True" SortExpression="Product Name" />
+                            <asp:ButtonField CommandName="select" Text="Select" />
+                            <asp:ButtonField CommandName="delete" Text="Delete" />
+                            <asp:BoundField DataField="Product Code" HeaderText="Product Code" SortExpression="Product Code" />
+                            <asp:BoundField DataField="Product Name" HeaderText="Product Name" SortExpression="Product Name" />
                             <asp:BoundField DataField="Category" HeaderText="Category" SortExpression="Category" />
+                            <asp:BoundField DataField="Amount" HeaderText="Amount" SortExpression="Amount" />
+                            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                             <asp:BoundField DataField="Product Image" HeaderText="Product Image" SortExpression="Product Image" />
                         </Columns>
                         <FooterStyle BackColor="#CCCCCC" />

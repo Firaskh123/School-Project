@@ -97,8 +97,7 @@
                         </tr>
                         <tr>
                             <td class="auto-style5">
-                                <asp:Button ID="Button3" runat="server" Text="Return" />
-                            </td>
+                                &nbsp;</td>
                             <td class="auto-style9">
                                 <asp:Button ID="Button4" runat="server" Text="Add to Cart" />
                             </td>

@@ -74,8 +74,9 @@
     <Content Include="Admin-Main.aspx" />
     <Content Include="App_Data\DB.accdb" />
     <Content Include="Home.aspx" />
-    <Content Include="Logged-Browse.aspx" />
+    <Content Include="Logged-ViewCategories.aspx" />
     <Content Include="Logged-ShowProduct.aspx" />
+    <Content Include="Logged-ViewProducts.aspx" />
     <Content Include="Pictures\logo.png" />
     <Content Include="Pictures\Resized-Logo.png" />
     <Content Include="Product-Control.aspx" />
@@ -116,6 +117,13 @@
     <Compile Include="Logged-ShowProduct.aspx.designer.cs">
       <DependentUpon>Logged-ShowProduct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logged-ViewProducts.aspx.cs">
+      <DependentUpon>Logged-ViewProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logged-ViewProducts.aspx.designer.cs">
+      <DependentUpon>Logged-ViewProducts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Logged.Master.cs">
       <DependentUpon>Logged.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -123,12 +131,12 @@
     <Compile Include="Logged.Master.designer.cs">
       <DependentUpon>Logged.Master</DependentUpon>
     </Compile>
-    <Compile Include="Logged-Browse.aspx.cs">
-      <DependentUpon>Logged-Browse.aspx</DependentUpon>
+    <Compile Include="Logged-ViewCategories.aspx.cs">
+      <DependentUpon>Logged-ViewCategories.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Logged-Browse.aspx.designer.cs">
-      <DependentUpon>Logged-Browse.aspx</DependentUpon>
+    <Compile Include="Logged-ViewCategories.aspx.designer.cs">
+      <DependentUpon>Logged-ViewCategories.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product-Control.aspx.cs">
       <DependentUpon>Product-Control.aspx</DependentUpon>
@@ -202,7 +210,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pictures\Categories\" />
+    <Folder Include="Pictures\Products\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
