@@ -15,7 +15,7 @@ namespace Project
         }
 
         protected void GridViewAllUsers_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {//function deletes user from database
+        { 
            
         }
         protected void ButtonRefresh_Click(object sender, EventArgs e)

@@ -47,7 +47,7 @@ namespace Project
                             Labelforerrors.Text = "succesfully registered!";
                             Session["fullname"] = TextBox1.Text;
                             Session["email"] = TextBox3.Text;
-                            Response.Redirect("Logged-Browse.aspx");
+                            Response.Redirect("Logged-ViewCategories.aspx");
                             //admin entrance is done manually through database
                         }
                         catch (Exception ex)

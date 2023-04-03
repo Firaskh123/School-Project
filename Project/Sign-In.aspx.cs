@@ -32,7 +32,7 @@ namespace Project
                     Session["email"] = em;
                     if ((bool)dt.Rows[0][7] != true)
                     {
-                        Response.Redirect("Logged-Browse.aspx");
+                        Response.Redirect("Logged-ViewCategories.aspx");
                     }
                     else
                     {//in-case of admin log in

@@ -25,3 +25,4 @@ pages that need to be made for the 30%:
 
 -need to check page Logged-ShowProduct.aspx for property "number" on the amount textbox
 - make an add product page on product-control.aspx
+- product-control.aspx ability to see products is not important for the 30%
