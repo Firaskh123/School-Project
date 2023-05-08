@@ -33,6 +33,31 @@ namespace Project
 
             DataTable dt = DBfunctions.SelectFromTable(sqlStr, "MyDB.accdb");
             this.ImageProduct0.ImageUrl = dt.Rows[0][5].ToString();
+            Session["InStock"] = dt.Rows[0][3].ToString();
+            Label2.Text = "Amount of products in stock is :" + dt.Rows[0][3].ToString();
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            if (int.Parse(TextBoxProdAmount0.Text) > int.Parse(Session["InStock"].ToString()))
+            {//checks if amount ordered is less than in stock
+                Label1.Text = "Not enough products in stock";
+                Label1.Visible = true;
+            }
+            else
+            {
+                string FileName = "DB.accdb";
+                string sqlstr = "insert into orders(Email,ProductCode,ProductName,ProductCategory,ProductPrice,Amount,Status,OrderDate) values('";
+                sqlstr += Session["email"].ToString() + "','";
+                sqlstr += TextBoxProdCode0.Text + "','";
+                sqlstr += TextBoxProdName0.Text + "','";
+                sqlstr += TextBoxProdCat0.Text + "','";
+                sqlstr += TextBoxProdPrice0.Text + "',";
+                sqlstr += TextBoxProdAmount0.Text + ",'";
+                sqlstr += "InCart" + "','";
+                sqlstr += DateTime.UtcNow + "')";
+            }
+
         }
     }
 }

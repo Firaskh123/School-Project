@@ -12,7 +12,7 @@ namespace Project
         protected void Page_Load(object sender, EventArgs e)
         {
             {//a non admin account must not have access
-                if (Session["fullname"] == null)
+                if (Session["email"] == null)
                     Response.Redirect("Home.aspx");
                 else
                 {

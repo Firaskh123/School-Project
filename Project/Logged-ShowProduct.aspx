@@ -69,6 +69,8 @@
                             </td>
                             <td class="auto-style12" rowspan="5">
                                 <asp:Image ID="ImageProduct0" runat="server" Height="150px" Width="150px" />
+                                <br />
+                                <asp:Label ID="Label2" runat="server" Text="Amount in stock" Visible="False"></asp:Label>
                             </td>
                         </tr>
                         <tr>
@@ -86,7 +88,7 @@
                         <tr>
                             <td class="auto-style7">Num of Products :</td>
                             <td class="auto-style10">
-                                <asp:TextBox ID="TextBoxProdNum0" runat="server" Width="23px" ReadOnly="True" TextMode="Number">1</asp:TextBox>
+                                <asp:TextBox ID="TextBoxProdAmount0" runat="server" Width="23px" ReadOnly="True" TextMode="Number">1</asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -99,9 +101,11 @@
                             <td class="auto-style5">
                                 &nbsp;</td>
                             <td class="auto-style9">
-                                <asp:Button ID="Button4" runat="server" Text="Add to Cart" />
+                                <asp:Button ID="Button4" runat="server" Text="Add to Cart" OnClick="Button4_Click" />
                             </td>
-                            <td class="auto-style12">&nbsp;</td>
+                            <td class="auto-style12">
+                                <asp:Label ID="Label1" runat="server" Text="errors" Visible="False"></asp:Label>
+                            </td>
                         </tr>
                     </table>
                 </asp:Panel>
