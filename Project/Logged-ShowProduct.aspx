@@ -70,7 +70,7 @@
                             <td class="auto-style12" rowspan="5">
                                 <asp:Image ID="ImageProduct0" runat="server" Height="150px" Width="150px" />
                                 <br />
-                                <asp:Label ID="Label2" runat="server" Text="Amount in stock" Visible="False"></asp:Label>
+                                <asp:Label ID="Label2" runat="server" Text="Amount in stock"></asp:Label>
                             </td>
                         </tr>
                         <tr>

@@ -74,6 +74,7 @@
     <Content Include="Admin-Main.aspx" />
     <Content Include="App_Data\DB.accdb" />
     <Content Include="Home.aspx" />
+    <Content Include="Logged-MyCart.aspx" />
     <Content Include="Logged-ViewCategories.aspx" />
     <Content Include="Logged-ShowProduct.aspx" />
     <Content Include="Logged-ViewProducts.aspx" />
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="Admin-Main.aspx.designer.cs">
       <DependentUpon>Admin-Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logged-MyCart.aspx.cs">
+      <DependentUpon>Logged-MyCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logged-MyCart.aspx.designer.cs">
+      <DependentUpon>Logged-MyCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logged-ShowProduct.aspx.cs">
       <DependentUpon>Logged-ShowProduct.aspx</DependentUpon>

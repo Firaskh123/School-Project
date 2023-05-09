@@ -69,9 +69,9 @@
                     <td class="auto-style6">
                         <div class="topnav auto-style6">
                             <b>
-                          <a href="Logged-Browse.aspx">Browse</a>
+                          <a href="Logged-ViewCategories.aspx">Browse</a>
                           <a href="Logged-Browse.aspx">Profile</a>&nbsp;
-                          <a href="Logged-Browse.aspx">My Cart</a>
+                          <a href="Logged-MyCart.aspx">My Cart</a>
                           <a href="SignOut.aspx">Sign Out</a>
                             </b></div>
                     </td>
