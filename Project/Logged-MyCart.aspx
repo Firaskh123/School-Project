@@ -1,12 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Logged.Master" AutoEventWireup="true" CodeBehind="Logged-MyCart.aspx.cs" Inherits="Project.Logged_MyCart" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <asp:Panel ID="Panel1" runat="server" style="background-color: #000000">
     <table align="center" style="width: 100%">
         <tr>
-            <td>&nbsp;</td>
-            <td>
-                <h2 style="color: #FFFFFF">My Cart</h2>
+            <td style="height: 33px"></td>
+            <td style="height: 33px">
+                <h2 style="color: #FFFFFF; text-align: center;">My Cart</h2>
             </td>
-            <td>&nbsp;</td>
+            <td style="height: 33px"></td>
         </tr>
         <tr>
             <td>&nbsp;</td>
@@ -56,4 +57,148 @@
             <td>&nbsp;</td>
         </tr>
     </table>
+    </asp:Panel>
+        <strong>
+    <asp:Panel ID="Panel2" runat="server" style="color: #FFFFFF; background-color: #000000;" Visible="False">
+        <table style="width: 100%">
+            <tr>
+                <td>
+                    <h3></h3>
+                </td>
+                <td colspan="2">
+                    <h2 style="text-align: center"><strong>Payment:</strong></h2>
+                </td>
+                <td>
+                    <h3></h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 23px">
+                    <h3></h3>
+                </td>
+                <td style="height: 23px">
+                    <h3>Total Price:</h3>
+                </td>
+                <td style="height: 23px">
+                    <h3>
+                        <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True"></asp:TextBox>
+                        </strong>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox1" CssClass="auto-style25" ErrorMessage="*Field must not be empty" ForeColor="Red" style="font-weight: normal" ValidationGroup="Visa"></asp:RequiredFieldValidator>
+                    </h3>
+                </td>
+                <strong>
+                <td style="height: 23px">
+                    <h3></h3>
+                </td>
+                </strong>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                </td>
+                <td>
+                    <h3>Visa Account Name:</h3>
+                </td>
+                <td>
+                    <h3>
+                        <asp:TextBox ID="TextBox2" runat="server" Width="150px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox2" CssClass="auto-style25" ErrorMessage="*Field must not be empty" ForeColor="Red" style="font-weight: normal" ValidationGroup="Visa"></asp:RequiredFieldValidator>
+                    </h3>
+                </td>
+                <td>
+                    <h3></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                </td>
+                <td>
+                    <h3>Visa Number:</h3>
+                </td>
+                <td>
+                    <h3><strong>
+                        <asp:TextBox ID="TextBox3" runat="server" Width="150px"></asp:TextBox>
+                        </strong>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox3" CssClass="auto-style25" ErrorMessage="*Field must not be empty" ForeColor="Red" style="font-weight: normal" ValidationGroup="Visa"></asp:RequiredFieldValidator>
+                        </strong>&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="*Format is incorrect" ValidationExpression="^\d{16,}$" ValidationGroup="Visa" style="font-weight: normal; color: #FF0000"></asp:RegularExpressionValidator>
+                    </h3>
+                </td>
+                <strong>
+                <td>
+                    <h3></h3>
+                </td>
+                </strong>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                </td>
+                <td>
+                    <h3>Expiry Date:</h3>
+                </td>
+                <td>
+                    <h3 style="text-align: left">
+                        <asp:TextBox ID="TextBox5" runat="server" Width="100px"></asp:TextBox>
+                        (MM,YY)<strong><asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="TextBox4" CssClass="auto-style25" ErrorMessage="*Field must not be empty" ForeColor="Red" style="font-weight: normal" ValidationGroup="Visa"></asp:RequiredFieldValidator>
+                        </strong></strong>&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox5" ErrorMessage="*Format is incorrect" style="font-weight: normal; color: #FF0000" ValidationExpression="^(0[1-9]|1[0-2])\/\d{2}$" ValidationGroup="Visa "></asp:RegularExpressionValidator>
+                    </h3>
+                </td>
+                <strong>
+                <td>
+                    <h3></h3>
+                </td>
+                </strong>
+            </tr>
+            <tr>
+                <td style="height: 30px">
+                    <h3></h3>
+                </td>
+                <td style="height: 30px">
+                    <h3>CVV Number:</h3>
+                </td>
+                <td style="height: 30px">
+                    <h3><strong>
+                        <asp:TextBox ID="TextBox4" runat="server" Width="150px"></asp:TextBox>
+                        </strong>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TextBox5" CssClass="auto-style25" ErrorMessage="*Field must not be empty" ForeColor="Red" style="font-weight: normal" ValidationGroup="Visa"></asp:RequiredFieldValidator>
+                        &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="*Format is incorrect" style="font-weight: normal; color: #FF0000" ValidationExpression="^\d{3,}$" ValidationGroup="Visa"></asp:RegularExpressionValidator>
+                    </h3>
+                </td>
+                <td style="height: 30px">
+                    <h3></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                </td>
+                <td>
+                    <h3>
+                        <asp:Button ID="Button3" runat="server" Height="30px" OnClick="Button3_Click" Text="Go Back" />
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        <asp:Button ID="Button2" runat="server" Height="30px" Text="Procceed to payment" />
+                    </h3>
+                </td>
+                <td>
+                    <h3></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                </td>
+                <td colspan="2">
+                    <h3></h3>
+                </td>
+                <td>
+                    <h3></h3>
+                </td>
+            </tr>
+        </table>
+
+    </asp:Panel>
 </asp:Content>

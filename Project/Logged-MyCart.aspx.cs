@@ -23,11 +23,19 @@ namespace Project
                 sum += double.Parse(dt.Rows[i][4].ToString()) * int.Parse(dt.Rows[i][5].ToString());
             } 
             TextBoxTotal.Text = sum.ToString();
+            TextBox1.Text = sum.ToString();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        {//function for paying
+        {//function moves to payment panel
+            Panel1.Visible = false;
+            Panel2.Visible = true;
+        }
 
+        protected void Button3_Click(object sender, EventArgs e)
+        {//function goes back to order list
+            Panel2.Visible = false;
+            Panel1.Visible = true;
         }
     }
 }
