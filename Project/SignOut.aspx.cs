@@ -10,7 +10,7 @@ namespace Project
     public partial class SignOut : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        { //ends all logged in sessions
             Session["fullname"].abandon();
             Session["email"].abandon();
             Response.Redirect("Home.aspx");
