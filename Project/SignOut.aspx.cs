@@ -11,8 +11,8 @@ namespace Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["fullname"] = null;
-            Session["email"] = null;
+            Session["fullname"].abandon();
+            Session["email"].abandon();
             Response.Redirect("Home.aspx");
         }
     }
